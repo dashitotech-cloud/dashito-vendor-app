@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native projects (generated via `expo prebuild` / `expo run:android` — not committed under the managed/CNG workflow)
+android/
+ios/
+
+# Native credentials & signing (defense in depth, in case android/ or ios/ is ever tracked)
+*.jks
+*.p8
+*.p12
+*.key
+*.keystore
+*.mobileprovision
+keystore.properties
+google-services.json
+GoogleService-Info.plist
+*.orig.*
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+*.backup
+
+# Logs
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Metro
+.metro-health-check*
+
+# TypeScript
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

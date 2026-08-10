@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Dashito Vendor",
+    "slug": "dashito-vendor",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dashito.vendor"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.dashito.vendor",
+      "versionCode": 4,
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "POST_NOTIFICATIONS"
+      ],
+      "googleServicesFile": "./android/app/google-services.json"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Dashito Vendor to access your photos to upload documents and images.",
+          "cameraPermission": "Allow Dashito Vendor to use your camera to take photos of documents and images."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#059669",
+          "androidMode": "default",
+          "androidCollapsedTitle": "Dashito Vendor"
+        }
+      ],
+      "expo-font",
+      "expo-sharing",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ecfdf5"
+        }
+      ]
+    ]
+  }
+}
